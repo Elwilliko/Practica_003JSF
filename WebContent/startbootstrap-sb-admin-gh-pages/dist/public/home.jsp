@@ -19,7 +19,7 @@
     
     <%@page import="java.util.ArrayList"%>	
     <%@page import="java.util.List"%>
-    <%@page import="ups.edu.ec.modelo.Empresa"%>
+    <%@page import="ups.edu.ec.bean.Empresa"%>
     <%@page import="ec.edu.ups.dao.DAOFactory"%>
     <%@page import="ec.edu.ups.dao.EmpresaDAO"%>	
     <%@page import="java.sql.Connection"%>
