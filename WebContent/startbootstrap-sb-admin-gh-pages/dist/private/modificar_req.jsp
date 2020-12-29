@@ -21,7 +21,7 @@
     
     	<%@page import="java.util.ArrayList"%>	
 	    <%@page import="java.util.List"%>
-	    <%@page import="ups.edu.ec.modelo.Producto"%>
+	    <%@page import="ups.edu.ec.bean.Producto"%>
 	    <%@page import="ec.edu.ups.dao.DAOFactory"%>
 	    <%@page import="ec.edu.ups.dao.ProductoDAO"%>
 	    <%@page import="java.sql.Connection"%>

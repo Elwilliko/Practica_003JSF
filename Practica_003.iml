@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$USER_HOME$/Downloads/glassfish5/glassfish/modules/jakarta.faces.jar!/" />
+    <libelement value="jar://$USER_HOME$/Downloads/glassfish5/glassfish/modules/glassfish-api.jar!/" />
+    <libelement value="jar://$USER_HOME$/Downloads/glassfish5/glassfish/modules/cdi-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/cdi-api-javadoc.jar!/" />
+    <conelement value="org.eclipse.glassfish.tools.lib.system" />
+    <conelement value="org.eclipse.jst.j2ee.internal.web.container" />
+    <conelement value="org.eclipse.jst.j2ee.internal.module.container" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebContent/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebContent" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <datasource-mapping />
+        <naming-strategy-map />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/META-INF/persistence.xml" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/build/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="org.eclipse.glassfish.tools.lib.system" level="application" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.web.container" level="application" />
+    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.module.container" level="application" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="jakarta.faces.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/glassfish5/glassfish/modules/jakarta.faces.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="http://docs.oracle.com/javaee/8/api/" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="glassfish-api.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/glassfish5/glassfish/modules/glassfish-api.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="http://docs.oracle.com/javaee/8/api/" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="cdi-api.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/glassfish5/glassfish/modules/cdi-api.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="http://docs.oracle.com/javaee/8/api/" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="cdi-api-javadoc.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/cdi-api-javadoc.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
