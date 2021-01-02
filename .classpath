@@ -28,6 +28,9 @@
 			<attribute name="javadoc_location" value="http://docs.oracle.com/javaee/8/api/"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-8.0.20.jar"/>
+=======
 	<classpathentry kind="lib" path="lib/cdi-api-javadoc.jar"/>
 	<classpathentry kind="lib" path="/Users/kevingodoy/Downloads/glassfish5/glassfish/modules/endorsed/jakarta.annotation-api.jar">
 		<attributes>
@@ -41,5 +44,6 @@
 			<attribute name="javadoc_location" value="http://docs.oracle.com/javaee/8/api/"/>
 		</attributes>
 	</classpathentry>
+>>>>>>> main
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
