@@ -16,7 +16,7 @@ import javax.persistence.*;
 
 public class Bodega implements Serializable {
 
-	 @Id
+	 	@Id
 	    @GeneratedValue(strategy = GenerationType.AUTO)
 	    private int codigo;
 	    private String nombre;
