@@ -8,6 +8,9 @@ import javax.enterprise.context.RequestScoped;
 import javax.faces.annotation.FacesConfig;
 import javax.inject.Named;
 
+import ups.edu.ec.entidad.Bodega;
+import ups.edu.ec.entidad.Categoria;
+
 //Activates CDI build-in beans
 @FacesConfig(version = FacesConfig.Version.JSF_2_3)
 @Named 
