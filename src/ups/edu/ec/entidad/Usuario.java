@@ -14,6 +14,9 @@ import ups.edu.ec.entidad.FacturaCabecera;
 @Entity
 
 public class Usuario implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	
 	@Id
     private int codigo;
     private String correo;

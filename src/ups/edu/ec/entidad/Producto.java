@@ -16,7 +16,9 @@ import javax.persistence.*;
 
 public class Producto implements Serializable {
 
-    @Id
+	private static final long serialVersionUID = 1L;
+	
+	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int codigo;
     private String nombre;

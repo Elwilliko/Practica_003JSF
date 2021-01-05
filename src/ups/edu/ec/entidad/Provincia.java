@@ -14,7 +14,8 @@ import javax.persistence.*;
 
 public class Provincia implements Serializable {
 
-
+	private static final long serialVersionUID = 1L;
+	
     @Id
     private String codigo;
     private String nombre;
