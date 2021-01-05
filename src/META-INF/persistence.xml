@@ -14,7 +14,6 @@
         <class>ups.edu.ec.entidad.Persona</class>
         <class>ups.edu.ec.entidad.Producto</class>
         <class>ups.edu.ec.entidad.Provincia</class>
-        <class>ups.edu.ec.entidad.Bodega</class>
         <class>ups.edu.ec.entidad.Pedido</class>
         
         <properties>
