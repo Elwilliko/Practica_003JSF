@@ -4,12 +4,14 @@ import java.io.Serializable;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.faces.annotation.FacesConfig;
 import javax.inject.Named;
-
+import ups.edu.ec.ejb.*;
 import ups.edu.ec.entidad.Bodega;
 import ups.edu.ec.entidad.Categoria;
+import ups.edu.ec.entidad.Producto;
 
 //Activates CDI build-in beans
 @FacesConfig(version = FacesConfig.Version.JSF_2_3)
@@ -26,7 +28,13 @@ public class ProductoBean implements Serializable{
       private int stock;
       private List<Categoria> list;
       private List<Bodega> bodegas;
-     
+      private List<Producto> productos;
+      @EJB
+      private CategoriaFacade ejbCategoriaFacade;
+      @EJB
+      private BodegaFacade ejbBodegaFacade;
+      @EJB
+      private ProductoFacade ejbProductoFacade;
       @PostConstruct
       public void init(){
           list=ejbCategoriaFacade.findAll();

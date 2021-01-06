@@ -1,7 +1,6 @@
 package ups.edu.ec.bean;
 
-import ec.edu.ups.ejb.FacturaCabeceraFacade;
-import ec.edu.ups.ejb.PersonaFacade;
+import ups.edu.ec.ejb.*;
 import ups.edu.ec.entidad.*;
 
 import javax.annotation.PostConstruct;

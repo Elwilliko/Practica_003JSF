@@ -1,6 +1,6 @@
 package ups.edu.ec.bean;
-import ec.edu.ups.ejb.ProvinciaFacade;
 import ups.edu.ec.entidad.*;
+import ups.edu.ec.ejb.*;
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;

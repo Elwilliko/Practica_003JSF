@@ -1,8 +1,7 @@
 package ups.edu.ec.bean;
 
-import ec.edu.ups.ejb.RolFacade;
+import ups.edu.ec.ejb.*;
 import ups.edu.ec.entidad.*;
-
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;

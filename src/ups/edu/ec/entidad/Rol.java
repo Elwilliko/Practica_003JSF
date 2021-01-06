@@ -20,7 +20,9 @@ public class Rol implements Serializable {
 	    @OneToMany(cascade = CascadeType.ALL, mappedBy = "rol")
 	    private List<Usuario> usuariosRolesList;
 
-	    public Rol(){}
+	   public Rol() {
+		   
+	   }
 
 	    public Rol(String nombre, String descripcion, List<Usuario> usuariosRolesList) {
 	        this.nombre = nombre;

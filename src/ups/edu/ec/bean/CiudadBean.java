@@ -32,7 +32,7 @@ public class CiudadBean {
     public Ciudad consultarCiudad(String nombre, Provincia provincia){
         Ciudad c=ciudadFacade.find(nombre);
         if (c ==null){
-            ciudadFacade.create(new Ciudad(nombre,nombre,provincia));
+        	ciudadFacade.create(new Ciudad(nombre,nombre,provincia));
             return (Ciudad) ciudadFacade.find(nombre);
         }
         return c;

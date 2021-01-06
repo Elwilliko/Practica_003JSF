@@ -1,8 +1,5 @@
 package ups.edu.ec.bean;
-import ec.edu.ups.ejb.FacturaCabeceraFacade;
-import ec.edu.ups.ejb.FacturaDetalleFacade;
-import ec.edu.ups.ejb.PersonaFacade;
-import ec.edu.ups.ejb.ProductoFacade;
+import ups.edu.ec.ejb.*;
 
 import ups.edu.ec.entidad.*;
 
@@ -82,10 +79,10 @@ public class DetalleBean implements Serializable {
             this.precio= producto.getPrecioVenta();
             this.subtotal=this.quantity*producto.getPrecioVenta();
             this.busqueda = "producto encontrado : stock : " + producto.getStock();
-            this.list.add(new Row(id, name, quantity,precio,subtotal));
+           // this.list.add(new Row(id,name,quantity,precio,subtotal));
             this.subtotalcabecera = 0.0;
             for(Row p: list){
-                subtotalcabecera = subtotalcabecera + p.getSubtotal();
+             //   subtotalcabecera = subtotalcabecera + p.getSubtotal();
             }
             this.descuento = 0.00;
             this.iva=subtotalcabecera * 0.12;
@@ -123,7 +120,7 @@ public class DetalleBean implements Serializable {
     }
 
     public String edit(Row t) {
-        t.setEditable(true);
+       // t.setEditable(true);
         return null;
     }
 
@@ -317,22 +314,22 @@ public class DetalleBean implements Serializable {
 
 
         for(Row p: list){
-            producto = ejbProductoFacade.find(p.getId());
+           // producto = ejbProductoFacade.find(p.getId());
             disminuir = 0;
-            disminuir = producto.getStock()-p.getQuantity();
+          //  disminuir = producto.getStock()-p.getQuantity();
             producto.setStock(disminuir);
             ejbProductoFacade.edit(producto);
-            ejbFacturaDetalleFacade.create(new FacturaDetalle(p.getQuantity(),p.getSubtotal(),facturaCabecera,producto));
+          //  ejbFacturaDetalleFacade.create(new FacturaDetalle(p.getQuantity(),p.getSubtotal(),facturaCabecera,producto));
         }
         System.out.println("Se creo todos los detalles y se disminuyo el stock" );
 
         this.mensaje = "se ha creado exitosamente la factura";
     }
     public String save(Row t) {
-        t.setEditable(false);
+       // t.setEditable(false);
         this.subtotalcabecera = 0.0;
         for(Row p: list){
-            subtotalcabecera = subtotalcabecera + p.getSubtotal();
+        //    subtotalcabecera = subtotalcabecera + p.getSubtotal();
         }
         this.descuento = 0.00;
         this.iva=subtotalcabecera * 0.12;
@@ -343,7 +340,7 @@ public class DetalleBean implements Serializable {
         this.list.remove(t);
         this.subtotalcabecera = 0.0;
         for(Row p: list){
-            subtotalcabecera = subtotalcabecera + p.getSubtotal();
+          //  subtotalcabecera = subtotalcabecera + p.getSubtotal();
         }
         this.descuento = 0.00;
         this.iva=subtotalcabecera * 0.12;

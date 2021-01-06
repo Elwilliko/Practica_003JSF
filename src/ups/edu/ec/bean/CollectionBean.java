@@ -1,6 +1,6 @@
 package ups.edu.ec.bean;
 
-import ec.edu.ups.ejb.FacturaCabeceraFacade;
+import ups.edu.ec.ejb.FacturaCabeceraFacade;
 import ups.edu.ec.entidad.FacturaCabecera;
 
 import java.io.Serializable;

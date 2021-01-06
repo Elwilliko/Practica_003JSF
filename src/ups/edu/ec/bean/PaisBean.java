@@ -1,6 +1,6 @@
 package ups.edu.ec.bean;
 
-import ec.edu.ups.ejb.PaisFacade;
+import ups.edu.ec.ejb.*;
 import ups.edu.ec.entidad.Pais;
 
 import javax.annotation.PostConstruct;

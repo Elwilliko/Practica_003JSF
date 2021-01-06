@@ -137,7 +137,7 @@ public class CatalogoBean implements Serializable{
     }
 
     public void redirect(){
-        System.out.println("LEO");
+        System.out.println("redirige");
         try {
             FacesContext.getCurrentInstance().getExternalContext().redirect("/public/logIn.xhtml");
         } catch (Exception e) {

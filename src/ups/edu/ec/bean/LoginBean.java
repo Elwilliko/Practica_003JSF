@@ -1,6 +1,6 @@
 package ups.edu.ec.bean;
 
-import ec.edu.ups.ejb.UsuarioFacade;
+import ups.edu.ec.ejb.UsuarioFacade;
 import ups.edu.ec.entidad.*;
 
 

@@ -1,9 +1,9 @@
 package ups.edu.ec.bean;
 
 
-import ups.edu.ec.http.HttpClient;
-import ups.edu.ec.http.OnHttpRequestComplete;
-import ups.edu.ec.http.Response;
+//import ups.edu.ec.http.HttpClient;
+//import ups.edu.ec.http.OnHttpRequestComplete;
+//import ups.edu.ec.http.Response;
 
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
@@ -79,7 +79,7 @@ public class AjaxUbiGeo implements Serializable {
         ArrayList<String> paisesf=new ArrayList<String>();
         paisesf.add("---Elige---");
 
-        HttpClient cliente = new HttpClient(new OnHttpRequestComplete() {
+        /*HttpClient cliente = new HttpClient(new OnHttpRequestComplete() {
             @Override
             public void onComplete(Response status) {
                 if (status.isSuccess()) {
@@ -89,7 +89,7 @@ public class AjaxUbiGeo implements Serializable {
                     pedro = pedro.substring(0, pedro.length() - 1);
                     String[] p = pedro.split("}");
 
-                    /* Paises */
+                    
                     paises=new HashMap<>();
                     for (String pp : p) {
                         pp = pp.substring(9, pp.length());
@@ -108,16 +108,16 @@ public class AjaxUbiGeo implements Serializable {
             }
         });
 
-        cliente.excecute("http://battuta.medunes.net/api/country/all/?key=14aa95483fee2c14f4e20d45a0bac62e");
+        cliente.excecute("http://battuta.medunes.net/api/country/all/?key=14aa95483fee2c14f4e20d45a0bac62e");*/
         return paisesf;
     }
 
 
-    private ArrayList<String> obtenerProvincias(String pais){
+   private ArrayList<String> obtenerProvincias(String pais){
 
         ArrayList<String> provincias=new ArrayList<String>();
         provincias.add("---Elige---");
-        HttpClient cliente = new HttpClient(new OnHttpRequestComplete() {
+       /* HttpClient cliente = new HttpClient(new OnHttpRequestComplete() {
             @Override
             public void onComplete(Response status) {
                 if (status.isSuccess()) {
@@ -143,14 +143,15 @@ public class AjaxUbiGeo implements Serializable {
         });
         this.codePais=paises.get(pais);
         cliente.excecute("http://battuta.medunes.net/api/region/"+this.codePais+"/all/?key=14aa95483fee2c14f4e20d45a0bac62e");
-        return provincias;
+        */
+		return provincias;
     }
 
     private ArrayList<String> obtenerCiudades(String provincia){
 
         ArrayList<String> ciudades=new ArrayList<String>();
         ciudades.add("---Elige---");
-        HttpClient cliente = new HttpClient(new OnHttpRequestComplete() {
+       /* HttpClient cliente = new HttpClient(new OnHttpRequestComplete() {
             @Override
             public void onComplete(Response status) {
                 if (status.isSuccess()) {
@@ -176,7 +177,9 @@ public class AjaxUbiGeo implements Serializable {
         String[] provinciaF=provincia.split(" ");
 
         cliente.excecute("http://battuta.medunes.net/api/city/"+this.codePais+"/search/?region="+provinciaF[provinciaF.length-1]+"&key=14aa95483fee2c14f4e20d45a0bac62e");
+        */
         return ciudades;
+		
     }
 
 
